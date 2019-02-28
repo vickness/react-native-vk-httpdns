@@ -9,6 +9,7 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import HttpDns from './libraries/index';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -19,6 +20,26 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+
+  componentDidMount(): void {
+
+    //预加载域名
+    const hosts = ["http://www.baidu.com", "http://www.aliyun.com"];
+
+    //配置HTTPDNS解析
+    HttpDns.getService(139450)
+        .setPreResolveHosts(hosts)
+        .setCachedIPEnabled(true)
+        .setHTTPSRequestEnabled(true)
+        .setLogEnabled(false)
+        .setExpiredIPEnabled(false)
+        .setPreResolveAfterNetworkChanged(false)
+        .getIpByHostAsyncInURLFormat("http://www.aliyun.com")
+        .then(res => {
+            console.log("当前域名的IP地址："+res);
+        });
+  }
+
   render() {
     return (
       <View style={styles.container}>

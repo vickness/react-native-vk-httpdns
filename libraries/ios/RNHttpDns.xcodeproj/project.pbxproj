@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E1855B62227930100DF11B1 /* AlicloudUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1855882227930000DF11B1 /* AlicloudUtils.a */; };
+		8E1855B72227930100DF11B1 /* AlicloudHttpDNS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1855942227930000DF11B1 /* AlicloudHttpDNS.a */; };
+		8E1855B82227930100DF11B1 /* UTDID.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E18559A2227930100DF11B1 /* UTDID.a */; };
+		8E1855B92227930100DF11B1 /* UTMini.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1855B52227930100DF11B1 /* UTMini.a */; };
 		B3E7B58A1CC2AC0600A0062D /* RNHttpDns.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNHttpDns.m */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +28,59 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNHttpDns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNHttpDns.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1855802227930000DF11B1 /* ABSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSUtil.h; sourceTree = "<group>"; };
+		8E1855812227930000DF11B1 /* AntilockBrakeSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AntilockBrakeSystem.h; sourceTree = "<group>"; };
+		8E1855822227930000DF11B1 /* ABSUncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSUncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		8E1855832227930000DF11B1 /* AlicloudReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlicloudReachabilityManager.h; sourceTree = "<group>"; };
+		8E1855842227930000DF11B1 /* EMASSecurityModeCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMASSecurityModeCommon.h; sourceTree = "<group>"; };
+		8E1855852227930000DF11B1 /* AlicloudTrackerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlicloudTrackerManager.h; sourceTree = "<group>"; };
+		8E1855862227930000DF11B1 /* AlicloudIPv6Adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlicloudIPv6Adapter.h; sourceTree = "<group>"; };
+		8E1855872227930000DF11B1 /* EMASOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMASOptions.h; sourceTree = "<group>"; };
+		8E1855882227930000DF11B1 /* AlicloudUtils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AlicloudUtils.a; sourceTree = "<group>"; };
+		8E1855892227930000DF11B1 /* AlicloudUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlicloudUtils.h; sourceTree = "<group>"; };
+		8E18558A2227930000DF11B1 /* EMASBeaconService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMASBeaconService.h; sourceTree = "<group>"; };
+		8E18558B2227930000DF11B1 /* EMASTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMASTools.h; sourceTree = "<group>"; };
+		8E18558C2227930000DF11B1 /* AlicloudTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlicloudTracker.h; sourceTree = "<group>"; };
+		8E18558D2227930000DF11B1 /* ABSBootingProtection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSBootingProtection.h; sourceTree = "<group>"; };
+		8E18558E2227930000DF11B1 /* EMASSecurityModeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMASSecurityModeManager.h; sourceTree = "<group>"; };
+		8E18558F2227930000DF11B1 /* UtilLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilLog.h; sourceTree = "<group>"; };
+		8E1855902227930000DF11B1 /* AlicloudHTTPDNSMini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlicloudHTTPDNSMini.h; sourceTree = "<group>"; };
+		8E1855912227930000DF11B1 /* AlicloudReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlicloudReport.h; sourceTree = "<group>"; };
+		8E1855932227930000DF11B1 /* AlicloudHttpDNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlicloudHttpDNS.h; sourceTree = "<group>"; };
+		8E1855942227930000DF11B1 /* AlicloudHttpDNS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AlicloudHttpDNS.a; sourceTree = "<group>"; };
+		8E1855952227930000DF11B1 /* HttpdnsServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpdnsServiceProvider.h; sourceTree = "<group>"; };
+		8E1855962227930000DF11B1 /* HttpdnsLoggerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpdnsLoggerDelegate.h; sourceTree = "<group>"; };
+		8E1855972227930000DF11B1 /* HttpdnsDegradationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpdnsDegradationDelegate.h; sourceTree = "<group>"; };
+		8E1855992227930100DF11B1 /* AidProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AidProtocol.h; sourceTree = "<group>"; };
+		8E18559A2227930100DF11B1 /* UTDID.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = UTDID.a; sourceTree = "<group>"; };
+		8E18559B2227930100DF11B1 /* UTDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTDevice.h; sourceTree = "<group>"; };
+		8E18559D2227930100DF11B1 /* AppMonitorMeasure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMonitorMeasure.h; sourceTree = "<group>"; };
+		8E18559E2227930100DF11B1 /* UTIRequestAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTIRequestAuthentication.h; sourceTree = "<group>"; };
+		8E18559F2227930100DF11B1 /* AppMonitorDimensionValueSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMonitorDimensionValueSet.h; sourceTree = "<group>"; };
+		8E1855A02227930100DF11B1 /* UTICrashCaughtListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTICrashCaughtListener.h; sourceTree = "<group>"; };
+		8E1855A12227930100DF11B1 /* UTOirginalCustomHitBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTOirginalCustomHitBuilder.h; sourceTree = "<group>"; };
+		8E1855A22227930100DF11B1 /* UTCustomHitBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTCustomHitBuilder.h; sourceTree = "<group>"; };
+		8E1855A32227930100DF11B1 /* AppMonitorDimensionSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMonitorDimensionSet.h; sourceTree = "<group>"; };
+		8E1855A42227930100DF11B1 /* AppMonitorAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMonitorAlarm.h; sourceTree = "<group>"; };
+		8E1855A52227930100DF11B1 /* AppMonitorMeasureSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMonitorMeasureSet.h; sourceTree = "<group>"; };
+		8E1855A62227930100DF11B1 /* UTHitBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTHitBuilder.h; sourceTree = "<group>"; };
+		8E1855A72227930100DF11B1 /* AppMonitorCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMonitorCounter.h; sourceTree = "<group>"; };
+		8E1855A82227930100DF11B1 /* AppMonitorBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMonitorBase.h; sourceTree = "<group>"; };
+		8E1855A92227930100DF11B1 /* AppMonitorMeasureValueSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMonitorMeasureValueSet.h; sourceTree = "<group>"; };
+		8E1855AA2227930100DF11B1 /* UTSecuritySDKRequestAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTSecuritySDKRequestAuthentication.h; sourceTree = "<group>"; };
+		8E1855AB2227930100DF11B1 /* UTAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTAnalytics.h; sourceTree = "<group>"; };
+		8E1855AC2227930100DF11B1 /* AppMonitorMeasureValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMonitorMeasureValue.h; sourceTree = "<group>"; };
+		8E1855AD2227930100DF11B1 /* AppMonitorDimension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMonitorDimension.h; sourceTree = "<group>"; };
+		8E1855AE2227930100DF11B1 /* AppMonitorTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMonitorTable.h; sourceTree = "<group>"; };
+		8E1855AF2227930100DF11B1 /* AppMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMonitor.h; sourceTree = "<group>"; };
+		8E1855B02227930100DF11B1 /* AppMonitorStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMonitorStat.h; sourceTree = "<group>"; };
+		8E1855B12227930100DF11B1 /* UTPageHitBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTPageHitBuilder.h; sourceTree = "<group>"; };
+		8E1855B22227930100DF11B1 /* UT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UT.h; sourceTree = "<group>"; };
+		8E1855B32227930100DF11B1 /* UTBaseRequestAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTBaseRequestAuthentication.h; sourceTree = "<group>"; };
+		8E1855B42227930100DF11B1 /* UTTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTTracker.h; sourceTree = "<group>"; };
+		8E1855B52227930100DF11B1 /* UTMini.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = UTMini.a; sourceTree = "<group>"; };
+		8E1855BB2227932000DF11B1 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		8E1855BD2227932900DF11B1 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		B3E7B5881CC2AC0600A0062D /* RNHttpDns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNHttpDns.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNHttpDns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNHttpDns.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,6 +90,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1855B82227930100DF11B1 /* UTDID.a in Frameworks */,
+				8E1855B92227930100DF11B1 /* UTMini.a in Frameworks */,
+				8E1855B72227930100DF11B1 /* AlicloudHttpDNS.a in Frameworks */,
+				8E1855B62227930100DF11B1 /* AlicloudUtils.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,10 +111,107 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				8E1855922227930000DF11B1 /* AlicloudHttpDNS */,
+				8E18557F2227930000DF11B1 /* AlicloudUtils */,
+				8E1855982227930100DF11B1 /* UTDID */,
+				8E18559C2227930100DF11B1 /* UTMini */,
 				B3E7B5881CC2AC0600A0062D /* RNHttpDns.h */,
 				B3E7B5891CC2AC0600A0062D /* RNHttpDns.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				8E1855BA2227932000DF11B1 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		8E18557F2227930000DF11B1 /* AlicloudUtils */ = {
+			isa = PBXGroup;
+			children = (
+				8E1855802227930000DF11B1 /* ABSUtil.h */,
+				8E1855812227930000DF11B1 /* AntilockBrakeSystem.h */,
+				8E1855822227930000DF11B1 /* ABSUncaughtExceptionHandler.h */,
+				8E1855832227930000DF11B1 /* AlicloudReachabilityManager.h */,
+				8E1855842227930000DF11B1 /* EMASSecurityModeCommon.h */,
+				8E1855852227930000DF11B1 /* AlicloudTrackerManager.h */,
+				8E1855862227930000DF11B1 /* AlicloudIPv6Adapter.h */,
+				8E1855872227930000DF11B1 /* EMASOptions.h */,
+				8E1855882227930000DF11B1 /* AlicloudUtils.a */,
+				8E1855892227930000DF11B1 /* AlicloudUtils.h */,
+				8E18558A2227930000DF11B1 /* EMASBeaconService.h */,
+				8E18558B2227930000DF11B1 /* EMASTools.h */,
+				8E18558C2227930000DF11B1 /* AlicloudTracker.h */,
+				8E18558D2227930000DF11B1 /* ABSBootingProtection.h */,
+				8E18558E2227930000DF11B1 /* EMASSecurityModeManager.h */,
+				8E18558F2227930000DF11B1 /* UtilLog.h */,
+				8E1855902227930000DF11B1 /* AlicloudHTTPDNSMini.h */,
+				8E1855912227930000DF11B1 /* AlicloudReport.h */,
+			);
+			name = AlicloudUtils;
+			path = "../../../../未命名文件夹/AlicloudUtils";
+			sourceTree = "<group>";
+		};
+		8E1855922227930000DF11B1 /* AlicloudHttpDNS */ = {
+			isa = PBXGroup;
+			children = (
+				8E1855932227930000DF11B1 /* AlicloudHttpDNS.h */,
+				8E1855942227930000DF11B1 /* AlicloudHttpDNS.a */,
+				8E1855952227930000DF11B1 /* HttpdnsServiceProvider.h */,
+				8E1855962227930000DF11B1 /* HttpdnsLoggerDelegate.h */,
+				8E1855972227930000DF11B1 /* HttpdnsDegradationDelegate.h */,
+			);
+			name = AlicloudHttpDNS;
+			path = "../../../../未命名文件夹/AlicloudHttpDNS";
+			sourceTree = "<group>";
+		};
+		8E1855982227930100DF11B1 /* UTDID */ = {
+			isa = PBXGroup;
+			children = (
+				8E1855992227930100DF11B1 /* AidProtocol.h */,
+				8E18559A2227930100DF11B1 /* UTDID.a */,
+				8E18559B2227930100DF11B1 /* UTDevice.h */,
+			);
+			name = UTDID;
+			path = "../../../../未命名文件夹/UTDID";
+			sourceTree = "<group>";
+		};
+		8E18559C2227930100DF11B1 /* UTMini */ = {
+			isa = PBXGroup;
+			children = (
+				8E18559D2227930100DF11B1 /* AppMonitorMeasure.h */,
+				8E18559E2227930100DF11B1 /* UTIRequestAuthentication.h */,
+				8E18559F2227930100DF11B1 /* AppMonitorDimensionValueSet.h */,
+				8E1855A02227930100DF11B1 /* UTICrashCaughtListener.h */,
+				8E1855A12227930100DF11B1 /* UTOirginalCustomHitBuilder.h */,
+				8E1855A22227930100DF11B1 /* UTCustomHitBuilder.h */,
+				8E1855A32227930100DF11B1 /* AppMonitorDimensionSet.h */,
+				8E1855A42227930100DF11B1 /* AppMonitorAlarm.h */,
+				8E1855A52227930100DF11B1 /* AppMonitorMeasureSet.h */,
+				8E1855A62227930100DF11B1 /* UTHitBuilder.h */,
+				8E1855A72227930100DF11B1 /* AppMonitorCounter.h */,
+				8E1855A82227930100DF11B1 /* AppMonitorBase.h */,
+				8E1855A92227930100DF11B1 /* AppMonitorMeasureValueSet.h */,
+				8E1855AA2227930100DF11B1 /* UTSecuritySDKRequestAuthentication.h */,
+				8E1855AB2227930100DF11B1 /* UTAnalytics.h */,
+				8E1855AC2227930100DF11B1 /* AppMonitorMeasureValue.h */,
+				8E1855AD2227930100DF11B1 /* AppMonitorDimension.h */,
+				8E1855AE2227930100DF11B1 /* AppMonitorTable.h */,
+				8E1855AF2227930100DF11B1 /* AppMonitor.h */,
+				8E1855B02227930100DF11B1 /* AppMonitorStat.h */,
+				8E1855B12227930100DF11B1 /* UTPageHitBuilder.h */,
+				8E1855B22227930100DF11B1 /* UT.h */,
+				8E1855B32227930100DF11B1 /* UTBaseRequestAuthentication.h */,
+				8E1855B42227930100DF11B1 /* UTTracker.h */,
+				8E1855B52227930100DF11B1 /* UTMini.a */,
+			);
+			name = UTMini;
+			path = "../../../../未命名文件夹/UTMini";
+			sourceTree = "<group>";
+		};
+		8E1855BA2227932000DF11B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E1855BD2227932900DF11B1 /* libresolv.tbd */,
+				8E1855BB2227932000DF11B1 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,13 +361,18 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNHttpDns;
 				SKIP_INSTALL = YES;
@@ -219,6 +382,10 @@
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
