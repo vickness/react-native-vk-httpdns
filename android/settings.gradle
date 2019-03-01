@@ -1,3 +1,5 @@
 rootProject.name = 'RNHttpDNS'
 
 include ':app'
+include ':reactlibrary'
+project(':reactlibrary').projectDir = new File('../libraries/android')

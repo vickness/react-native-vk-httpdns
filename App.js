@@ -27,17 +27,22 @@ export default class App extends Component<Props> {
     const hosts = ["http://www.baidu.com", "http://www.aliyun.com"];
 
     //配置HTTPDNS解析
-    HttpDns.getService(139450)
+    HttpDns.getService("139450")
         .setPreResolveHosts(hosts)
         .setCachedIPEnabled(true)
         .setHTTPSRequestEnabled(true)
         .setLogEnabled(false)
         .setExpiredIPEnabled(false)
-        .setPreResolveAfterNetworkChanged(false)
-        .getIpByHostAsyncInURLFormat("http://www.aliyun.com")
+        .setPreResolveAfterNetworkChanged(false);
+
+    HttpDns.getIpByHostAsyncInURLFormat("http://www.aliyun.com")
         .then(res => {
-            console.log("当前域名的IP地址："+res);
-        });
+          console.log("当前域名的IP地址："+res);
+          alert(res);
+        }).catch(error => {
+      alert(res);
+    });
+
   }
 
   render() {
