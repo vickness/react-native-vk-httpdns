@@ -13,8 +13,12 @@
 
 ## Getting started
 
-`$ npm install react-native-vk-httpdns --save` 
-`$ yarn add react-native-vk-httpdns`
+```
+$ npm install react-native-vk-httpdns --save
+
+$ yarn add react-native-vk-httpdns
+```
+
 
 ### Mostly automatic installation
 
@@ -70,7 +74,7 @@
 ```javascript
 import RNHttpDns from 'react-native-vk-httpdns';
 ```
-```
+```javascript
 const host = "http://www.aliyun.com";
 
 //配置HttpDns
@@ -93,7 +97,6 @@ HttpDns.getIpByHostAsyncInURLFormat(host)
             console.log(error);
           
         });
-
 ```
 
 
