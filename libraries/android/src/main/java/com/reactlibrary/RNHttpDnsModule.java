@@ -50,6 +50,7 @@ public class RNHttpDnsModule extends ReactContextBaseJavaModule {
     httpDnsService.setExpiredIPEnabled(var1);
   }
 
+  @SuppressWarnings("unchecked")
   @ReactMethod
   public void setPreResolveHosts(ReadableArray var1) {
 

@@ -1,18 +1,26 @@
-
 {
   "name": "react-native-vk-httpdns",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
+  "description": "react-native library for aliyun httpdns",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "react",
+    "httpdns",
+    "aliyun",
+    "dns",
+    "http"
   ],
   "author": "",
-  "license": "",
+  "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.41.2"
-  }
+    "react-native": ">=0.40"
+  },
+  "bugs": {
+    "url": "https://github.com/vickness/react-native-vk-httpdns/issues"
+  },
+  "homepage": "https://github.com/vickness/react-native-vk-httpdns#readme"
 }
