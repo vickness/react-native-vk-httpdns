@@ -1,6 +1,6 @@
 {
   "name": "react-native-vk-httpdns",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react-native library for aliyun httpdns",
   "main": "index.js",
   "scripts": {

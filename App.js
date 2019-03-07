@@ -8,7 +8,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import HttpDns from './libraries/index';
 
 const instructions = Platform.select({
@@ -18,41 +18,58 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+const host1 = "http://www.aliyun.com";
+const host2 = "http://gw.alicdn.com";
+const host3 = "http://www.taobao.com";
+
 type Props = {};
 export default class App extends Component<Props> {
 
   componentDidMount(): void {
 
-    //预加载域名
-    const hosts = ["http://www.baidu.com", "http://www.aliyun.com"];
-
     //配置HTTPDNS解析
     HttpDns.getService("139450")
-        .setPreResolveHosts(hosts)
+        .setPreResolveHosts([host1, host2, host3])
         .setCachedIPEnabled(true)
         .setHTTPSRequestEnabled(true)
         .setLogEnabled(false)
         .setExpiredIPEnabled(false)
         .setPreResolveAfterNetworkChanged(false);
-
-    HttpDns.getIpByHostAsyncInURLFormat("http://www.aliyun.com")
-        .then(res => {
-          console.log("当前域名的IP地址："+res);
-          alert(res);
-        }).catch(error => {
-      alert(res);
-    });
-
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Text style={styles.welcome}>阿里云HttpDns测试Demo</Text>
+
+        <TouchableOpacity onPress={() => {this._onPressGetIP(host1)}}>
+          <Text style={styles.instructions}>{`域名：${host1} -- 点击获取IP地址`}</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => {this._onPressGetIP(host2)}}>
+          <Text style={styles.instructions}>{`域名：${host2} -- 点击获取IP地址`}</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => {this._onPressGetIP(host3)}}>
+          <Text style={styles.instructions}>{`域名：${host3} -- 点击获取IP地址`}</Text>
+        </TouchableOpacity>
       </View>
     );
+  }
+
+  //获取IP地址
+  _onPressGetIP = (host) => {
+
+    HttpDns.getIpByHostAsyncInURLFormat(host)
+        .then(res => {
+
+          alert(res);
+
+        }).catch(error => {
+
+          alert("ip地址获取失败");
+
+    });
   }
 }
 
@@ -72,5 +89,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+      marginVertical: 20
   },
 });

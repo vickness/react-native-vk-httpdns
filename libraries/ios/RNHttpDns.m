@@ -57,16 +57,24 @@ RCT_EXPORT_METHOD(getIpByHostAsyncInURLFormat:(NSString *)host
 
         //异步解析接口，首先查询缓存，若存在则返回结果，若不存在返回空对象并且进行异步域名解析更新缓存
         NSString *ip = [self.httpDnsService getIpByHostAsyncInURLFormat:url.host];
+        [NSThread sleepForTimeInterval:0.5];
         //地址存在，直接返回
-        if (ip) { resolve(ip); return; }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (ip) { resolve(ip); return; }
+        });
 
         //如果IP地址不存在，创建同步请求获取
+        NSError *error = nil;
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
-        [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:NULL];
+        [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:&error];
 
         //请求完成，再获取一次IP，并返回结果
         ip = [self.httpDnsService getIpByHostAsyncInURLFormat:url.host];
-        ip ? resolve(ip) : reject(@"0", @"Get IP failed!", [NSError new]);
+        [NSThread sleepForTimeInterval:0.5];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            ip ? resolve(ip) : reject(@"0", @"Get IP failed!", error);
+        });
     });
 }
 
