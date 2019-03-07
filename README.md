@@ -11,7 +11,7 @@
 - Android_Demo对应目录：[httpdns_android_demo](https://github.com/aliyun/alicloud-android-demo/tree/master/httpdns_android_demo)
 - 产品官网：[地址](https://www.aliyun.com/product/httpdns)
 
-## Getting started
+## 安装
 
 ```
 $ npm install react-native-vk-httpdns --save
@@ -20,11 +20,11 @@ $ yarn add react-native-vk-httpdns
 ```
 
 
-### Mostly automatic installation
+### 自动配置
 
 `$ react-native link react-native-vk-httpdns`
 
-### Manual installation
+### 手动配置
 
 
 #### iOS
@@ -49,7 +49,7 @@ $ yarn add react-native-vk-httpdns
       compile project(':react-native-vk-httpdns')
   	```
   	
-#### Other
+### 其他配置
 
 1. iOS add the following libraries to your "Link Binary with Libraries":
 
